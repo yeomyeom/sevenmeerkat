@@ -1,0 +1,71 @@
+.left_sidebar{
+    float: left;
+    height: 1080;
+    width: 250px;
+    margin-left: 10px;
+
+}
+
+.label_example_title{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.label_example1{
+    border: 1px solid;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 210;
+    max-height: 150px;
+    padding: 70px;
+}
+
+
+.label_example_text{
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    height: 400px;
+}
+
+.main_content{
+    float: left;
+    width: 1500px;
+    height: 700;
+    margin-left: 80px;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+
+h4.task_name{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: grey 0px 0.3px 0.2px;
+}
+
+canvas#canvas_result {
+    /*position: absolute;*/
+    max-height: 600px;
+    border-radius: 1%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: lightskyblue;
+}
+
+canvas#canvas_label{
+    position: absolute;
+}
+
+div#workspace {
+   position: relative; 
+}
+h6#label_example_text {
+    margin-top: 50px;
+    margin-left: 20px;
+}

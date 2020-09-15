@@ -1,0 +1,15 @@
+requests
+Flask
+boto3
+opencv-python
+pillow
+pymongo
+flask-bcrypt
+python-dotenv
+gunicorn
+Cython
+contextlib2
+lxml
+matplotlib
+tensorflow==1.13.1
+rq

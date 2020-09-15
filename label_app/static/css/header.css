@@ -1,0 +1,25 @@
+div.nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    position: absolute;
+    margin-top: 0%;
+    width: 100%;
+}
+
+div#settings{
+    position: absolute;
+    left: 1750px;
+}
+
+li.nav-item {
+    float: inherit;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+a#header_text{
+    text-shadow: grey 0px 0.2px 0.2px;
+}
+a#navbarDropdownMenuLink{
+    float: inherit;
+    margin-right: 5%;
+    font-weight: bold;
+}

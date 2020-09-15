@@ -1,0 +1,89 @@
+.datasetlist{
+    float: left;
+    width: 1150px;
+    height: 600px;
+    margin-left: 60px;
+    margin-top: 80px;
+    margin-right: 30px;
+}
+
+.control_pannel{
+    float: left;
+    width: 30%;
+    height: 50%;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.submit_pannel{
+    float:left;
+    width: 10%;
+    height:10%;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+h4#dataset_list_title{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select.custom-select.mr-sm-2{
+    float: inherit;
+    margin-top: 3px;
+}
+input.form-control{
+    float: inherit;
+    margin-top: 3px;
+    background-color: #CCE5FF;
+}
+div.btn-group{
+    float: inherit;
+    margin-top: 80px;
+}
+
+button.btn.btn-primary.btn-lg{
+    float: inherit;
+    margin-top: 250px;
+}
+
+h7{
+    float: inherit;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+h8{
+    float: inherit;
+    color: grey;
+    font-size: 12px;
+}
+
+button.btn.btn-dark{
+    float: inherit;
+    margin-top: 10px;
+    margin-right: 500px;
+}
+
+span.badge.badge-success{
+    float: inherit;
+    margin-top:20px;
+}
+span.badge.badge-danger{
+    float: inherit;
+    margin-top:20px;
+}
+
+
+div.control-elem{
+    margin-bottom: 40px;
+}
+
+label#tmp-text{
+    font-weight: bold;
+}
+
+
+button#save_task {
+    width: 90%;
+}

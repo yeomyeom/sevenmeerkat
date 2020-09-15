@@ -1,0 +1,133 @@
+div.wrap-table100{
+    position: inherit;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+h3#head_title{
+    margin-top:50px;
+    margin-left:120px;
+    text-shadow: silver 0px 1px 1px ;
+    font-weight: bold; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; } 
+
+th#c1{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 100px;
+    text-align: center;
+}
+
+th#c2{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 200px; text-align: center; }
+th#c3{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 250px;
+    text-align: center;
+}
+
+
+th#c4{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 250px;
+    text-align: center;
+}
+th#c5{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 200px;
+    text-align: center;
+}
+
+
+th#c6{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 200px;
+    text-align: center;
+}
+
+th#c7{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 200px;
+    text-align: center;
+}
+
+svg.bi.bi-file-plus{
+    position: inherit;
+    margin-left: 90%; 
+    box-shadow: slategray 0px 0.2px 0.2px;
+}
+
+
+td.column1{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 100px;
+    text-align: center;
+}
+
+span.badge.badge-success{
+    margin-top: 12%;
+    margin-left: 40%;
+    text-align: center;
+}
+
+span.badge.badge-danger{
+    margin-top: 12%;
+    margin-left: 37%;
+    text-align: center;
+}
+td.column2{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 200px;
+    text-align: center;
+}
+td.column3{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 250px;
+    text-align: center;
+}
+
+
+td.column4{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 250px;
+    text-align: center;
+}
+td.column5{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 200px;
+    text-align: center;
+}
+
+
+td.column6{
+    font-size: 15px;
+    text-shadow: slategray 0px 0.2px 0.2px;
+    width: 200px;
+    text-align: center;
+}
+
+button.btn.btn-info{
+    font-size: 15px;
+    width: 50%;
+    margin-left: 65px;
+    margin-bottom: 5px;
+    text-align: center;
+    box-shadow: grey 0px 0.5px 0.5px;
+    color:white;
+}
+svg#generate_task:hover{
+    color: #299E35;
+}

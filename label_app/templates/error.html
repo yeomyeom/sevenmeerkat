@@ -1,0 +1,19 @@
+{% extends "components/header.html" %}
+{% block content %}
+    {% if result %}
+    <div class="report">
+        <h1>Error Occurred</h1>
+        <div class="where">
+            <br>
+            {{result.where}}
+            <br>
+        </div>
+        <h1>What happen</h1>
+        <div class="what">
+            <br>
+            {{result.what}}
+            <br>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}

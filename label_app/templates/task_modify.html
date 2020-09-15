@@ -1,0 +1,76 @@
+{% extends "components/header.html" %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/task_modify.css') }}">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/vendor/bootstrap/css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/vendor/animate/animate.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/vendor/select2/select2.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/vendor/perfect-scrollbar/perfect-scrollbar.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/css/util.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/css/main.css') }}">
+
+<div class="datasetlist">
+    <h4 id="dataset_list_title">Dataset List</h4>
+    {% include 'components/data_list.html' %}
+</div> 
+
+<div class="control_pannel">
+    <div class="control-elem">
+        <h7>분류 선택</h7>
+        <select class="custom-select mr-sm-2" id="kind_selector">
+            <option value="detection">Detection</option>
+            <option value="segmentation">Segmentation</option>
+            <option value="text">Text</option>
+            <option value="classification">Classification</option>
+        </select>
+    </div>
+
+    <div class="control-elem">
+        <h7>Task Name</h7>
+        <input class="form-control" type="text" id="task_name" placeholder="Task name을 여기에 적어주세요.">
+        <h8>알파벳, 숫자, "_" 만 사용 가능합니다. 존재하는 Task name을 사용할 시, 적용된 데이터셋이 수정됩니다.</h8>
+    </div>
+
+    <div class="control-elem">
+        <h7>Task comment</h7>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Task comment 작성란</span>
+            </div>
+            <textarea id="task_comment" class="form-control" aria-label="With textarea"></textarea>
+        </div>
+    </div>
+
+    <div class="control-elem">
+        <h7>Selection List</h7>
+        <input class="form-control" type="text" id="selection_list" placeholder="Selection 목록으로 사용될 요소를 입력해주세요. (구분자 comma (,))">
+        <h8>위의 분류선택에서 "Selection"을 선택해야지만 이 란에 적은 내용이 적용됩니다.</h8>
+    </div>
+
+
+    <div class="control-elem">
+        <form>
+            <div class="form-group">
+              <label id="tmp-text" for="exampleFormControlFile1">예시 이미지</label>
+              <input id="example_images" type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+        </form>
+    </div>
+
+    <div class="control-elem">
+        <h7>활성화 여부</h7>
+        <button id="toggle_importance" type="button" class="btn btn-dark">활성화 토글</button>
+        <span class="badge badge-success">Activated</span>
+        <span class="badge badge-danger" style="display:none">Deactivated</span>
+    </div>
+</div>
+<div class="submit_pannel">
+    <button type="submit" class="btn btn-primary" id="save_task">제출하기</button>
+</div>
+
+
+<script type="text/javascript" src="/static/js/modifyTask.js"></script>
+<script type="text/javascript" src="/static/js/datasetList.js"></script>
+{% endblock %}

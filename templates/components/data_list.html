@@ -1,0 +1,24 @@
+<!--여기에 사용가능한 dataset list를 출력하는 table block을 만든다-->
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/data_list.css') }}">
+
+<div>
+    <div class="table100">
+        <table>
+            <thead>
+                <tr class="table100-head">
+                    <th class="column1" id="c1"> check </th>
+                    <th class="column2" id="c2"> Dataset name </th>
+                    <th class="column3" id="c3"> Dataset description </th>
+                    <th class="column4" id="c4"> 생성자 </th>
+                    <th class="column5" id="c5"> 생성일 </th>
+                </tr>
+            </thead>
+
+            <tbody id="table-body">
+                <!-- datalist table body contents -->
+            </tbody>
+        </table>
+    </div>
+</div>
+

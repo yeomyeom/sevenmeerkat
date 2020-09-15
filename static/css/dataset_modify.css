@@ -1,0 +1,68 @@
+/* 
+.datasetlist{
+    float: left;
+    width: 1150px;
+    height: 600px;
+    margin-left: 60px;
+    margin-top: 80px;
+    margin-right: 10px;
+} */
+
+h5#dataset_list_title{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: grey;
+    text-decoration-line: line-through;
+}
+/* div.datasetlist{
+    width: 1150px;
+    height: 640px;
+    opacity: 0.5;
+    
+} */
+
+/* div.control-pannel {
+    float: left;
+    margin-top: 100px;
+    width: 600px;
+    height: 500px;
+}
+ */
+
+/* div.submit-pannel {
+    float:left;
+    margin-top: 20px;
+    width: 600px;
+    height: 100px;
+}
+ */
+div.control-elem {
+    float: inherit;
+}
+
+h7 {
+    float: inherit;
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input.form-control {
+    background-color: #CCE5FF
+}
+
+h8{
+    float: inherit;
+    margin-top:2px;
+    color: grey;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+div.form-group {
+    margin-top:50px;
+}
+
+label#tmp-text {
+    font-weight: bold;
+}

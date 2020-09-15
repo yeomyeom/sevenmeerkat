@@ -1,0 +1,33 @@
+div.control-pannel {
+    float: left;
+    margin-top: 50px;
+    width: 30%;
+    height: 100%;
+
+}
+
+div.task-pannel {
+    float: right;
+    margin-top: 50px;
+    width: 70%;
+    height: 100%;
+
+}
+
+div.control-elem {
+    float: inherit;
+    width: 100%;
+    height: auto;
+
+}
+
+div.message-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    word-break: break-all;
+}
+
+div.submit_pannel {
+    float: right;
+}

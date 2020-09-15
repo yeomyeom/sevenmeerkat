@@ -1,0 +1,41 @@
+{% extends "components/header.html" %}
+{% block content %}
+
+<link href="{{ url_for('static', filename='css/task.css') }}", rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='css/work_area.css') }}", rel="stylesheet" type="text/css">
+<!-- <link href="{{ url_for('static', filename='css/multiple-select.css') }}", rel="stylesheet" type="text/css"> -->
+
+<div class="wrapper" id="contentsWrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="left_sidebar">
+                <h6 class="label_example_title"> Label 예시 이미지 </h6>
+                <div id="label_example_image"></div>
+                    <!--
+                <div class="label_example2"></div>
+                    -->
+                <h6 id="label_example_text"></h6>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <div class="main_content">
+                    <h4 class="task_name" id="task_name"></h4>
+                    <span class="badge badge-danger" id="kind"></span>
+                    <div style="display:none" id="data"></div>
+                        <!--task wrapper start-->
+                        <div class="task_wrapper" id="workspace"></div>
+                        <!--task wrapper end-->
+                    <a class="btn btn-success text-center" id="submit">제출하기</a>
+                    <!-- 나중에 잘못된 이미지를 신고할 수 있는 버튼으로 사용하자 -->
+                    <a class="btn btn-dark" id="next_button" style="display:none;">숨김처리</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/static/js/errorHandler.js"></script>
+<script type="text/javascript" src="/static/js/typeSelectControl.js"></script>
+
+{% endblock %}

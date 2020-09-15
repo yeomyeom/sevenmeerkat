@@ -1,0 +1,109 @@
+
+/*dataset list의 header*/
+div.wrap-table100{
+    width: 900px;
+}
+tr.table100-head{
+    background-color: lavender;
+    height: 55px;
+}
+
+th#c1{
+    color: #262626;
+    text-shadow: silver 0px 0.2px 0.2px;
+    position: absolute;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    width: 50px;
+}
+
+th#c2{
+    color: #262626;
+    text-shadow: silver 0px 0.2px 0.2px;
+    position: absolute;
+    margin: 10px;
+    margin-left: 80px;
+    padding: 10px;
+    font-size: 12px;
+    width: 100px;
+}
+
+th#c3{
+    color: #262626;
+    text-shadow: silver 0px 0.2px 0.2px;
+    position: absolute;
+    margin: 10px;
+    margin-left: 300px;
+    padding: 10px;
+    font-size: 12px;
+    width: 300px;
+}
+th#c4{
+    color: #262626;
+    text-shadow: silver 0px 0.2px 0.2px;
+    position: absolute;
+    margin: 10px;
+    margin-left: 500px;
+    padding: 10px;
+    font-size: 12px;
+    width: 150px;
+}
+
+
+th#c5{
+    color: #262626;
+    text-shadow: silver 0px 0.2px 0.2px;
+    position: absolute;
+    margin: 10px;
+    margin-left: 700px;
+    padding: 10px;
+    font-size: 12px;
+    width: 150px;
+}
+
+td.column1{
+    color: #262626;
+    position: absolute;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    width: 50px;
+}
+
+td.column2{
+    position: absolute;
+    margin: 10px;
+    margin-left: 80px;
+    padding: 10px;
+    font-size: 12px;
+    width: 100px;
+}
+
+td.column3 {
+    position: absolute;
+    margin: 10px;
+    margin-left: 300px;
+    padding: 10px;
+    font-size: 12px;
+    width: 300px;
+}
+
+td.column4 {
+    position: absolute;
+    margin: 10px;
+    margin-left: 500px;
+    padding: 10px;
+    font-size: 12px;
+    width: 150px;
+}
+
+td.column5 {
+
+    position: absolute;
+    margin: 10px;
+    margin-left: 700px;
+    padding: 10px;
+    font-size: 12px;
+    width: 150px;
+}

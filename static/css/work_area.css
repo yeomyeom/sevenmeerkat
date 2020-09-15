@@ -1,0 +1,70 @@
+/* a#submit{
+    position: fixed;
+    bottom: 10%;
+    right:300px;
+    color: white;
+    text-shadow: grey 0px 0.2px 0.2px;
+}
+
+a#next_button{
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    color: lightcyan;
+
+}
+
+div.selectize-control.single{
+    position: inherit;
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 17%;
+}
+
+
+input#textInput{
+    position: fixed;
+    top: 86.5%;
+    left: 50%;
+}
+
+div.image_box{
+    background: url();
+}
+
+canvas{
+    margin-top: 20px;
+
+} */
+
+
+a#submit{
+    color: white;
+    text-shadow: grey 0px 0.2px 0.2px;
+}
+
+a#next_button{
+    color: lightcyan;
+
+}
+
+div.selectize-control.single{
+    position: inherit;
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 17%;
+}
+
+
+input#textInput{
+    width:500px
+}
+
+div.image_box{
+    background: url();
+}
+
+canvas{
+    margin-top: 20px;
+
+} 

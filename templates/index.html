@@ -1,0 +1,32 @@
+{% extends "components/header.html" %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="static/css/card.css">
+<link rel="stylesheet" type="text/css" href="static/css/index.css">
+<body onload="printTime();printCount();"></body>
+
+<div class="wrapper">
+    <div class="card" style="width: 18rem;" id="card1">
+        <div class="card-body">
+            <h5 class="card-title">업무 관리</h5>
+            <p class="card-text" id="working_time"></p>
+            <br>
+            <div class="card_button_wrapper">
+                <a type="button" class="btn btn-danger" id="start_btn" onclick="working('start');">업무시작</a>
+                <a type="button" class="btn btn-primary" id="end_btn" onclick="working('end');">업무종료</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card" style="width: 18rem;" id="card2">
+        <div class="card-body">
+            <h5 class="card-title">오늘 한 업무량</h5>
+            <br>
+            <p class="card-text" id="working_count"> 00건 </p>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="/static/js/errorHandler.js"></script>
+<script type="text/javascript" src="static/js/workingTime.js"></script>
+{% endblock %}

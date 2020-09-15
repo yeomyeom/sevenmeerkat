@@ -1,0 +1,35 @@
+{% extends "components/header.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+<div class="login-box">
+  <h2>Register</h2>
+  <form name="registerform" action="/api/register" method="post">
+    <div class="user-box">
+      <input type="text" name="username" id="user-id"> 
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="email" id="user-email"> 
+      <label>E-mail</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password" id="user-password">
+      <label>Password</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password-conf" id="user-password-conf">
+      <label>Password Confim</label>
+    </div>
+    <a href="#" id="regist-btn" onclick="submitRegister();">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Register 
+    </a>
+  </form>
+</div>
+<script type="text/javascript" src="/static/js/errorHandler.js"></script>
+<script type="text/javascript" src="/static/js/register.js"></script>
+
+{% endblock %}

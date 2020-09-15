@@ -1,0 +1,19 @@
+{% extends "components/header.html" %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/download_raw.css') }}">
+<div id="message">
+    message box
+    {% if message %}
+        {{ message }}
+    {% endif %}
+</div>
+
+<div id="list-group">
+
+
+</div>
+
+<script type="text/javascript" src="/static/js/download_raw.js"></script>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "components/header.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="static/css/download.css">
+<div class="download_page">
+
+    <div class="control-elem">
+        <input class="form-control" type="text" id="task_name" placeholder="Task 이름을 적어주세요">
+    </div>
+    <div class="control-elem">
+        <input class="form-control" type="text" id="object_name" placeholder="라벨링된 물체의 이름을 적어주세요">
+    </div>
+    <br>
+    <span id="message"></span>
+    <br>
+    <div class="submit_pannel">
+        <button type="submit" class="btn btn-primary" id="send_task" style="display: inline;">다운로드</button>
+    </div>
+    
+</div>
+<script type="text/javascript" src="static/js/download.js"></script>
+{% endblock %}

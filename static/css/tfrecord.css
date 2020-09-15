@@ -1,0 +1,13 @@
+div.reserve-pannel {
+    float: left;
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+}
+
+div.download-pannel {
+    float: right;
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+}

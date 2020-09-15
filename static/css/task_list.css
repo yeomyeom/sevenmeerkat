@@ -1,0 +1,53 @@
+div.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+    grid-row-gap: 5%;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/*이 아래부터는 card element*/
+h5.card-title{
+    font-weight: bold;
+}
+
+a#enter_button{
+    box-shadow: darkgrey 0px 1px 1px;
+    margin-top: auto;
+    color: white;
+    text-shadow: grey 0px 0.5px 0px;
+}
+
+h6.card-title{
+    text-shadow: lightblue 0px 0.3px 0.2px;
+}
+
+p.card-text{
+    margin-top: 20px;
+}
+
+a#enter_button{
+    margin-bottom: 10px;
+    margin-right: 50%;
+}
+
+img#img_result{
+    float: inherit;
+    margin-top: 1%;
+    max-width: 98% ;
+    max-height: 40%;
+    align-self: center;
+}
+
+div.card {
+    float: inherit;
+    box-shadow: grey 0px 1px 1px;
+    height: 450px;
+}
+
+
+p.card-text {
+    overflow: auto;
+}

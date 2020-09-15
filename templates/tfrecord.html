@@ -1,0 +1,24 @@
+{% extends "components/header.html" %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/tfrecord.css') }}">
+
+<div class="tf_redirect_page">
+    <div class="reserve-pannel"> 
+        <form action="/tfrecord/reservation">
+            <button type="submit" class="btn btn-primary" id="reservation" style="display: inline;">작업예약</button>
+        </form>
+    </div> 
+    <div class="download-pannel">
+        <form action="tfrecord/download">
+            <button type="submit" class="btn btn-primary" id="download_tfr" style="display: inline;">다운로드_tfr</button>
+        </form>
+    </div>
+    <div class="download-pannel">
+        <form action="/download">
+            <button type="submit" class="btn btn-primary" id="download_raw" style="display: inline;">다운로드_raw</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

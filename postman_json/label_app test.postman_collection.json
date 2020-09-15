@@ -1,0 +1,1036 @@
+{
+	"info": {
+		"_postman_id": "5ee4610b-fce3-4ba1-9ce0-7bb4a2c836cf",
+		"name": "label_app test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "04 새로운 계정 생성하기",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/register?username=yeomyeom&password=1234&email=yeom@yeom.com",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "yeomyeom"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						},
+						{
+							"key": "email",
+							"value": "yeom@yeom.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04 새로운 계정 생성하기2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/register?username=test&password=1234&email=test1234@yeom.com",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "test"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						},
+						{
+							"key": "email",
+							"value": "test1234@yeom.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04 로그인 하기",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/login?username=yeomyeom&password=1234",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "yeomyeom"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04 로그인 하기2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/login?username=test&password=1234",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "test"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04 로그인 하기(실패)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/login?username=yeomyeom&password=wrongpassword",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "yeomyeom"
+						},
+						{
+							"key": "password",
+							"value": "wrongpassword"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02_업로드된 이미지 리스트 전부 가져오기01 Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/img_list",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"img_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "01_이미지업로드01",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/img_upload",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"img_upload"
+					]
+				},
+				"description": "이미지 파일이 없을때"
+			},
+			"response": []
+		},
+		{
+			"name": "01_이미지업로드02",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_004.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_003.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_002.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_001.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/img_upload?group=k5 자동차",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"img_upload"
+					],
+					"query": [
+						{
+							"key": "group",
+							"value": "k5 자동차"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "이미지가 있고 그룹 이름과, 그룹 설명이 적혀있음"
+			},
+			"response": []
+		},
+		{
+			"name": "01_이미지업로드03",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_004.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_003.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_002.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_001.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/img_upload?group=k5car&group_comment=k5 자동차 라벨링 부탁드립니다.&gen_user=yeomyeom",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"img_upload"
+					],
+					"query": [
+						{
+							"key": "group",
+							"value": "k5car"
+						},
+						{
+							"key": "group_comment",
+							"value": "k5 자동차 라벨링 부탁드립니다."
+						},
+						{
+							"key": "gen_user",
+							"value": "yeomyeom"
+						}
+					]
+				},
+				"description": "성공 케이스"
+			},
+			"response": []
+		},
+		{
+			"name": "01_이미지업로드04",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_004.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_003.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_002.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/suv 쏘렌토 번호판수정/kcarM_60352025_001.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/img_upload?group=starex&group_comment=스타렉스 자동차들 입니다.&gen_user=yeom",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"img_upload"
+					],
+					"query": [
+						{
+							"key": "group",
+							"value": "starex"
+						},
+						{
+							"key": "group_comment",
+							"value": "스타렉스 자동차들 입니다."
+						},
+						{
+							"key": "gen_user",
+							"value": "yeom"
+						}
+					]
+				},
+				"description": "또 다른 성공 케이스"
+			},
+			"response": []
+		},
+		{
+			"name": "01_이미지업로드05",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/헤백 모닝 case/kcarM_60356684_004.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/헤백 모닝 case/kcarM_60356684_003.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/헤백 모닝 case/kcarM_60356684_002.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/헤백 모닝 case/kcarM_60356684_001.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/img_upload?group=k9&group_comment=k9 자동차들 입니다&gen_user=ㅛ",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"img_upload"
+					],
+					"query": [
+						{
+							"key": "group",
+							"value": "k9"
+						},
+						{
+							"key": "group_comment",
+							"value": "k9 자동차들 입니다"
+						},
+						{
+							"key": "gen_user",
+							"value": "ㅛ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02_업로드된 이미지 리스트 전부 가져오기01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/img_list",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"img_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02_업로드된 이미지 리스트 전부 가져오기03",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/img_list?task_name=starex",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"img_list"
+					],
+					"query": [
+						{
+							"key": "task_name",
+							"value": "starex"
+						}
+					]
+				},
+				"description": "찾는 task 이름 있는 경우"
+			},
+			"response": []
+		},
+		{
+			"name": "02_Task 리스트 전부 가져오기01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/task_list",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"task_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03_Task 생성하기01",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/번호판검색 안된case/01.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/번호판검색 안된case/02.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/task_create?choose_group=k5car&kind=text&name=k5_car_detection_all&comment=자동차 있는것 다 체크 해주세요 ohhhhhhhhhhhhhh&is_activate=1",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"task_create"
+					],
+					"query": [
+						{
+							"key": "choose_group",
+							"value": "k5car"
+						},
+						{
+							"key": "kind",
+							"value": "text"
+						},
+						{
+							"key": "name",
+							"value": "k5_car_detection_all"
+						},
+						{
+							"key": "comment",
+							"value": "자동차 있는것 다 체크 해주세요 ohhhhhhhhhhhhhh"
+						},
+						{
+							"key": "is_activate",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03_Task 생성하기02",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/번호판검색 안된case/01.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/번호판검색 안된case/02.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/task_create?choose_group=k5car&kind=text&name=k5car_detection&comment=자동차 있는것 다 체크 해주세요&is_activate=1",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"task_create"
+					],
+					"query": [
+						{
+							"key": "choose_group",
+							"value": "k5car"
+						},
+						{
+							"key": "kind",
+							"value": "text"
+						},
+						{
+							"key": "name",
+							"value": "k5car_detection"
+						},
+						{
+							"key": "comment",
+							"value": "자동차 있는것 다 체크 해주세요"
+						},
+						{
+							"key": "is_activate",
+							"value": "1"
+						}
+					]
+				},
+				"description": "수정 테스트"
+			},
+			"response": []
+		},
+		{
+			"name": "03_Task 생성하기03",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/번호판검색 안된case/01.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/번호판검색 안된case/02.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/task_create?choose_group=starex&kind=segmentation&name=starex&comment=번호판 있는것 다 체크 해주세요&is_activate=1",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"task_create"
+					],
+					"query": [
+						{
+							"key": "choose_group",
+							"value": "starex"
+						},
+						{
+							"key": "kind",
+							"value": "segmentation"
+						},
+						{
+							"key": "name",
+							"value": "starex"
+						},
+						{
+							"key": "comment",
+							"value": "번호판 있는것 다 체크 해주세요"
+						},
+						{
+							"key": "is_activate",
+							"value": "1"
+						}
+					]
+				},
+				"description": "또 다른 task 만들기"
+			},
+			"response": []
+		},
+		{
+			"name": "03_Task 생성하기04",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/번호판검색 안된case/01.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/번호판검색 안된case/02.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/task_create?choose_group=k9&kind=detection&name=k9_plate_detection&comment=번호판 있는것 다 체크 해주세요&is_activate=1",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"task_create"
+					],
+					"query": [
+						{
+							"key": "choose_group",
+							"value": "k9"
+						},
+						{
+							"key": "kind",
+							"value": "detection"
+						},
+						{
+							"key": "name",
+							"value": "k9_plate_detection"
+						},
+						{
+							"key": "comment",
+							"value": "번호판 있는것 다 체크 해주세요"
+						},
+						{
+							"key": "is_activate",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03_Task 생성하기05",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/번호판검색 안된case/01.jpg"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shinhyun/Desktop/미국 자동차 모델명/번호판검색 안된case/02.jpg"
+						},
+						{
+							"key": "selection_list[0]",
+							"value": "2010",
+							"type": "text"
+						},
+						{
+							"key": "selection_list[1]",
+							"value": "3020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/task_create?choose_group=k9&kind=selection&name=k9_car_selection&comment=번호판 문자적혀있는 것 다 적어주세요&is_activate=1",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"task_create"
+					],
+					"query": [
+						{
+							"key": "choose_group",
+							"value": "k9"
+						},
+						{
+							"key": "kind",
+							"value": "selection"
+						},
+						{
+							"key": "name",
+							"value": "k9_car_selection"
+						},
+						{
+							"key": "comment",
+							"value": "번호판 문자적혀있는 것 다 적어주세요"
+						},
+						{
+							"key": "is_activate",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02_업로드된 이미지 리스트 전부 가져오기04",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/img_list?task_name=starex",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"img_list"
+					],
+					"query": [
+						{
+							"key": "task_name",
+							"value": "starex"
+						}
+					]
+				},
+				"description": "찾는 task 이름 있는 경우"
+			},
+			"response": []
+		},
+		{
+			"name": "05_Task 라벨링 하기01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/label/starex",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"label",
+						"starex"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05_Task 라벨링 하기02",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/label/starex?label=00바1234&kind=text",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"label",
+						"starex"
+					],
+					"query": [
+						{
+							"key": "label",
+							"value": "00바1234"
+						},
+						{
+							"key": "kind",
+							"value": "text"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "07 사용자 정보 출력",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/user_info?username=test",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user_info"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

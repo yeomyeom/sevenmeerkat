@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:4.2.5-bionic
+    container_name: 'local_mongo'
+    environment:
+      - MONGO_INITDB_DATABASE=meerkat
+      - MONGO_INITDB_ROOT_USERNAME=test
+      - MONGO_INITDB_ROOT_PASSWORD=test
+    ports:
+      - '27018:27017'
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./mongo_data/:/data/db

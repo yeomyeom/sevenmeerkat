@@ -1,0 +1,67 @@
+{% extends "components/header.html" %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dataset_modify.css') }}">
+
+<link rel="stylesheet" type="text/css"
+    href="{{ url_for('static', filename='responsive_table/vendor/bootstrap/css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css"
+    href="{{ url_for('static', filename='responsive_table/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<link rel="stylesheet" type="text/css"
+    href="{{ url_for('static', filename='responsive_table/vendor/animate/animate.css') }}">
+<link rel="stylesheet" type="text/css"
+    href="{{ url_for('static', filename='responsive_table/vendor/select2/select2.min.css') }}">
+<link rel="stylesheet" type="text/css"
+    href="{{ url_for('static', filename='responsive_table/vendor/perfect-scrollbar/perfect-scrollbar.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/css/util.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/css/main.css') }}">
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="datasetlist">
+                <h5 id="dataset_list_title">나중에 기능 추가될 예정</h5>
+                {% include 'components/data_list.html' %}
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="control-pannel">
+                <div class="control-elem">
+                    <h7>Dataset Name</h7>
+                    <input class="form-control" type="text" id="dataset-name" placeholder="Dataset name을 여기에 적어주세요.">
+                    <h8>알파벳, 숫자, "_" 만 사용 가능합니다. 존재하는 Dataset Name을 사용할 시, 적용된 데이터셋이 수정됩니다.</h8>
+                </div>
+
+                <div class="control-elem">
+                    <h7>Dataset comment</h7>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> comment 작성란</span>
+                        </div>
+                        <textarea id="dataset-comment" class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-elem">
+                    <form>
+                        <div class="form-group">
+                            <label id="tmp-text" for="exampleFormControlFile1">이미지 Upload</label>
+                            <input id="example_images" type="file" class="form-control-file"
+                                id="exampleFormControlFile1" multiple>
+                            <h8>원하는 이미지 파일 여러개를 선택해서 업로드해주세요. 이미지 파일이 아닌 경우 자동으로 제외되어 업로드됩니다.</h8>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="submit-pannel">
+                <button type="submit" class="btn btn-primary" id="save-dataset">제출하기</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/static/js/errorHandler.js"></script>
+<script type="text/javascript" src="/static/js/modifyDataset.js"></script>
+
+{% endblock %}

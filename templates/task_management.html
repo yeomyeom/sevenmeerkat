@@ -1,0 +1,83 @@
+{% extends "components/header.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="static/css/task_list.css">
+
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/task_management.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/vendor/bootstrap/css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/vendor/animate/animate.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/vendor/select2/select2.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/vendor/perfect-scrollbar/perfect-scrollbar.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/css/util.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive_table/css/main.css') }}">
+
+<div class="title_area">
+    <h3 id="head_title">Task List</h3>
+    <svg id="generate_task" class="bi bi-file-plus" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" onclick="location.href='/task_modify/new'">
+        <path d="M9 1H4a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V8h-1v5a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1h5V1z"/>
+        <path fill-rule="evenodd" d="M13.5 1a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 010-1H13V1.5a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+        <path fill-rule="evenodd" d="M13 3.5a.5.5 0 01.5-.5h2a.5.5 0 010 1H14v1.5a.5.5 0 01-1 0v-2z" clip-rule="evenodd"/>
+    </svg>
+
+</div>
+<div class="wrap-table100">
+    <div class="table100" style="overflow:auto;height:700px;">
+        <table>
+            <thead>
+                <tr class="table100-head">
+                    <th class="column1" id="c1"> 활성화 여부 </th>
+                    <th class="column2" id="c2"> 분류 </th>
+                    <th class="column3" id="c3"> Task 이름 </th>
+                    <th class="column4" id="c4"> 할당된 데이터셋 </th>
+                    <th class="column5" id="c6"> 생성자 </th>
+                    <th class="column6" id="c6"> 생성일 </th>
+                    <th class="column7" id="c7"> 수정 </th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                <!--Table contents-->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!--
+<tbody>
+    <tr>
+        <td class="column1"> Date </td>
+        <td class="column2"> Hamster </td>
+        <td class="column3"> Dog </td>
+    </tr>
+    <tr>
+        <td class="column1"> Date </td>
+        <td class="column2"> Hamster </td>
+        <td class="column3"> Dog </td>
+    </tr>
+    <tr>
+        <td class="column1"> Date </td>
+        <td class="column2"> Hamster </td>
+        <td class="column3"> Dog </td>
+    </tr>
+    <tr>
+        <td class="column1"> Date </td>
+        <td class="column2"> Hamster </td>
+        <td class="column3"> Dog </td>
+    </tr>
+</tbody>
+
+-->
+
+<script type="text/javascript" href="{{ url_for('static', filename='responsive_table/vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" href="{{ url_for('static', filename='responsive_table/vendor/bootstrap/js/popper.js') }}"></script>
+<script type="text/javascript" href="{{ url_for('static', filename='responsive_table/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" href="{{ url_for('static', filename='responsive_table/vendor/select2/select2.min.js') }}"></script>
+<script type="text/javascript" href="{{ url_for('static', filename='responsive_table/js/main.js') }}"></script>
+<script type="text/javascript" src="/static/js/errorHandler.js"></script>
+<script type="text/javascript" src="/static/js/printTaskManagementList.js"></script>
+
+
+
+
+{% endblock %}
