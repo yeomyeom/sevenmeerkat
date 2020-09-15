@@ -5,9 +5,8 @@
 
 DB 명세서 API 문서 참조
    
-[API 문서](./미어캣 LABEL APP API.xlsx)
+[API 문서](./LABEL_APP_API.xlsx)
 
-<br>
 <br>
 <br>
 
@@ -15,7 +14,7 @@ DB 명세서 API 문서 참조
 
 1. Labeling app repository clone 및 config path 생성
 ```
-git clone https://gitlab.com/7meerkat/labelling_app.git
+git clone https://github.com/yeomyeom/sevenmeerkat.git
 cd labelling_app
 mkdir config
 ```   
